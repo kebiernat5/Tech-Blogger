@@ -1,0 +1,18 @@
+<div class="text-center">
+  <h2>{{name}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{blog}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  
+  <p>
+    <button class="btn btn-primary">Leave a Comment!</button>
+    <textarea id="name" rows="1" cols="15">Name</textarea>
+    <textarea id="story" name="story"
+          rows="5" cols="33">
+It was a dark and stormy night...
+</textarea>
+<p>{{comment_name}}</p>
+<p>{{comment}}</p>
+<p>{{comment_date_created}}</p>
+  </p>
+</div>
