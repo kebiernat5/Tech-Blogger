@@ -1,0 +1,15 @@
+<section class="card">
+  <!-- The contents of this card links to the gallery page using the gallery ID -->
+  <a href="/post/{{id}}">
+    <!-- The card contains the gallery name as the card header -->
+    <header>{{comment.comment_name}}</header>
+    <!-- The card contains the first painting of the gallery -->
+{{#each comment as |comments| }}
+<div class="comment-section">
+<p>{{comment.comment_name}}</p>
+<p>{{comment.comment}}</p>
+<p>{{comment.comment_date_created}}</p>
+</div>
+{{/each}}
+  </a>
+</section>

@@ -17,11 +17,9 @@ Tell us what you think and leave a comment here...
   </p>
 
   <h1>Comments</h1>
-<div class="comment-section">
-<p>{{comment_name}}</p>
-<p>{{comment}}</p>
-<p>{{comment_date_created}}</p>
 </div>
-</div>
+    {{#each comments as |comment|}}
+    {{> comments comment}}
+    {{/each}}
 
 <script src="./js/comment.js"></script>
