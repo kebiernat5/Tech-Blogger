@@ -5,16 +5,23 @@
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
   
   <p>
-    <button class="btn btn-primary">Leave a Comment!</button>
+    <button class="btn btn-primary" id="comment-button">Leave a Comment!</button>
     <br><br>
-    <textarea id="name" rows="1" cols="15">Name</textarea>
+    <textarea id="comment-name" rows="1" cols="15">Name</textarea>
     <br>
-    <textarea id="story" name="story"
+    <textarea id="comment-body" name="story"
           rows="5" cols="33">
 Tell us what you think and leave a comment here...
 </textarea>
+
+  </p>
+
+  <h1>Comments</h1>
+<div class="comment-section">
 <p>{{comment_name}}</p>
 <p>{{comment}}</p>
 <p>{{comment_date_created}}</p>
-  </p>
 </div>
+</div>
+
+<script src="./js/comment.js"></script>
